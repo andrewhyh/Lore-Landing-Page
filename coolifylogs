@@ -1,0 +1,728 @@
+Coolify
+v4.0.0-beta.442
+
+/
+9+
+
+Root Team
+Dashboard
+Projects
+Servers
+Sources
+Destinations
+S3 Storages
+Shared Variables
+Notifications
+Keys & Tokens
+Tags
+Terminal
+Profile
+Teams
+Settings
+Upgrade
+Sponsor us
+Feedback
+Logout
+Deployment
+Lore
+production
+andrewhyh/-lore--landing--page:feature/ui-xskw0kkckgocksgw4808skw0
+Exited
+Configuration
+Deployments
+Logs
+Terminal
+
+Links
+
+Advanced
+Deploy
+Deployment Log
+Hide Debug Logs
+Deployment is Finished.
+
+
+
+
+2025-Nov-20 06:58:51.967046
+Starting deployment of andrewhyh/Lore-Landing-Page:main to localhost.
+2025-Nov-20 06:58:52.598534
+Preparing container with helper image: ghcr.io/coollabsio/coolify-helper:1.0.12
+2025-Nov-20 06:58:52.915946
+[CMD]: docker stop --time=30 kwccso00g4084cckgggcko0k
+2025-Nov-20 06:58:52.915946
+Flag --time has been deprecated, use --timeout instead
+2025-Nov-20 06:58:52.917682
+Error response from daemon: No such container: kwccso00g4084cckgggcko0k
+2025-Nov-20 06:58:53.230707
+[CMD]: docker rm -f kwccso00g4084cckgggcko0k
+2025-Nov-20 06:58:53.230707
+Error response from daemon: No such container: kwccso00g4084cckgggcko0k
+2025-Nov-20 06:58:53.588994
+[CMD]: docker run -d --network coolify --name kwccso00g4084cckgggcko0k  --rm -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/coollabsio/coolify-helper:1.0.12
+2025-Nov-20 06:58:53.588994
+ed09c89c2e0495f7efa720512a7bccba2cbac81852a54708fe4e7b75e2b15f6b
+2025-Nov-20 06:58:55.184923
+[CMD]: docker exec kwccso00g4084cckgggcko0k bash -c 'GIT_SSH_COMMAND="ssh -o ConnectTimeout=30 -p 22 -o Port=22 -o LogLevel=ERROR -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" git ls-remote https://x-access-token:<REDACTED>@github.com/andrewhyh/Lore-Landing-Page.git refs/heads/main'
+2025-Nov-20 06:58:55.184923
+1f70bb76b649a593a464254264283892563b2720	refs/heads/main
+2025-Nov-20 06:58:55.516424
+Image not found (xskw0kkckgocksgw4808skw0:1f70bb76b649a593a464254264283892563b2720). Building new image.
+2025-Nov-20 06:58:55.682049
+----------------------------------------
+2025-Nov-20 06:58:55.686672
+Importing andrewhyh/Lore-Landing-Page:main (commit sha 1f70bb76b649a593a464254264283892563b2720) to /artifacts/kwccso00g4084cckgggcko0k.
+2025-Nov-20 06:58:56.055341
+[CMD]: docker exec kwccso00g4084cckgggcko0k bash -c 'git clone --depth=1 --recurse-submodules --shallow-submodules -b 'main' 'https://x-access-token:<REDACTED>@github.com/andrewhyh/Lore-Landing-Page.git' '/artifacts/kwccso00g4084cckgggcko0k' && cd '/artifacts/kwccso00g4084cckgggcko0k' && if [ -f .gitmodules ]; then git submodule sync && GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" git submodule update --init --recursive --depth=1; fi && cd '/artifacts/kwccso00g4084cckgggcko0k' && GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" git lfs pull'
+2025-Nov-20 06:58:56.055341
+Cloning into '/artifacts/kwccso00g4084cckgggcko0k'...
+2025-Nov-20 06:58:57.435500
+[CMD]: docker exec kwccso00g4084cckgggcko0k bash -c 'cd /artifacts/kwccso00g4084cckgggcko0k && git log -1 1f70bb76b649a593a464254264283892563b2720 --pretty=%B'
+2025-Nov-20 06:58:57.435500
+Merge pull request #3 from andrewhyh/feature/ui
+2025-Nov-20 06:58:57.435500
+2025-Nov-20 06:58:57.435500
+feat: Add Nginx configuration for SPA routing and include it in Docke…
+2025-Nov-20 06:58:57.791421
+Generating nixpacks configuration with: nixpacks plan -f json --env NIXPACKS_NODE_VERSION=22 --env SOURCE_COMMIT=1f70bb76b649a593a464254264283892563b2720 --env COOLIFY_URL=https://xskw0kkckgocksgw4808skw0.comfykid.store --env COOLIFY_FQDN=xskw0kkckgocksgw4808skw0.comfykid.store --env COOLIFY_BRANCH=main --env COOLIFY_RESOURCE_UUID=xskw0kkckgocksgw4808skw0 --env COOLIFY_CONTAINER_NAME=xskw0kkckgocksgw4808skw0-065850099554 /artifacts/kwccso00g4084cckgggcko0k
+2025-Nov-20 06:58:58.154180
+[CMD]: docker exec kwccso00g4084cckgggcko0k bash -c 'nixpacks plan -f json --env NIXPACKS_NODE_VERSION=22 --env SOURCE_COMMIT=1f70bb76b649a593a464254264283892563b2720 --env COOLIFY_URL=https://xskw0kkckgocksgw4808skw0.comfykid.store --env COOLIFY_FQDN=xskw0kkckgocksgw4808skw0.comfykid.store --env COOLIFY_BRANCH=main --env COOLIFY_RESOURCE_UUID=xskw0kkckgocksgw4808skw0 --env COOLIFY_CONTAINER_NAME=xskw0kkckgocksgw4808skw0-065850099554 /artifacts/kwccso00g4084cckgggcko0k'
+2025-Nov-20 06:58:58.154180
+{
+2025-Nov-20 06:58:58.154180
+"providers": [],
+2025-Nov-20 06:58:58.154180
+"buildImage": "ghcr.io/railwayapp/nixpacks:ubuntu-1745885067",
+2025-Nov-20 06:58:58.154180
+"variables": {
+2025-Nov-20 06:58:58.154180
+"CI": "true",
+2025-Nov-20 06:58:58.154180
+"COOLIFY_BRANCH": "main",
+2025-Nov-20 06:58:58.154180
+"COOLIFY_CONTAINER_NAME": "xskw0kkckgocksgw4808skw0-065850099554",
+2025-Nov-20 06:58:58.154180
+"COOLIFY_FQDN": "xskw0kkckgocksgw4808skw0.comfykid.store",
+2025-Nov-20 06:58:58.154180
+"COOLIFY_RESOURCE_UUID": "xskw0kkckgocksgw4808skw0",
+2025-Nov-20 06:58:58.154180
+"COOLIFY_URL": "https://xskw0kkckgocksgw4808skw0.comfykid.store",
+2025-Nov-20 06:58:58.154180
+"NIXPACKS_METADATA": "node",
+2025-Nov-20 06:58:58.154180
+"NIXPACKS_NODE_VERSION": "22",
+2025-Nov-20 06:58:58.154180
+"NODE_ENV": "production",
+2025-Nov-20 06:58:58.154180
+"NPM_CONFIG_PRODUCTION": "false",
+2025-Nov-20 06:58:58.154180
+"SOURCE_COMMIT": "1f70bb76b649a593a464254264283892563b2720"
+2025-Nov-20 06:58:58.154180
+},
+2025-Nov-20 06:58:58.154180
+"phases": {
+2025-Nov-20 06:58:58.154180
+"build": {
+2025-Nov-20 06:58:58.154180
+"dependsOn": [
+2025-Nov-20 06:58:58.154180
+"install"
+2025-Nov-20 06:58:58.154180
+],
+2025-Nov-20 06:58:58.154180
+"cmds": [
+2025-Nov-20 06:58:58.154180
+"npm run build"
+2025-Nov-20 06:58:58.154180
+],
+2025-Nov-20 06:58:58.154180
+"cacheDirectories": [
+2025-Nov-20 06:58:58.154180
+"node_modules/.cache"
+2025-Nov-20 06:58:58.154180
+]
+2025-Nov-20 06:58:58.154180
+},
+2025-Nov-20 06:58:58.154180
+"install": {
+2025-Nov-20 06:58:58.154180
+"dependsOn": [
+2025-Nov-20 06:58:58.154180
+"setup"
+2025-Nov-20 06:58:58.154180
+],
+2025-Nov-20 06:58:58.154180
+"cmds": [
+2025-Nov-20 06:58:58.154180
+"npm ci"
+2025-Nov-20 06:58:58.154180
+],
+2025-Nov-20 06:58:58.154180
+"cacheDirectories": [
+2025-Nov-20 06:58:58.154180
+"/root/.npm"
+2025-Nov-20 06:58:58.154180
+],
+2025-Nov-20 06:58:58.154180
+"paths": [
+2025-Nov-20 06:58:58.154180
+"/app/node_modules/.bin"
+2025-Nov-20 06:58:58.154180
+]
+2025-Nov-20 06:58:58.154180
+},
+2025-Nov-20 06:58:58.154180
+"setup": {
+2025-Nov-20 06:58:58.154180
+"nixPkgs": [
+2025-Nov-20 06:58:58.154180
+"nodejs_22",
+2025-Nov-20 06:58:58.154180
+"npm-9_x"
+2025-Nov-20 06:58:58.154180
+],
+2025-Nov-20 06:58:58.154180
+"nixLibs": [
+2025-Nov-20 06:58:58.154180
+"gcc-unwrapped"
+2025-Nov-20 06:58:58.154180
+],
+2025-Nov-20 06:58:58.154180
+"nixOverlays": [
+2025-Nov-20 06:58:58.154180
+"https://github.com/railwayapp/nix-npm-overlay/archive/main.tar.gz"
+2025-Nov-20 06:58:58.154180
+],
+2025-Nov-20 06:58:58.154180
+"nixpkgsArchive": "ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7"
+2025-Nov-20 06:58:58.154180
+}
+2025-Nov-20 06:58:58.154180
+}
+2025-Nov-20 06:58:58.154180
+}
+2025-Nov-20 06:58:58.540921
+[CMD]: docker exec kwccso00g4084cckgggcko0k bash -c 'nixpacks detect /artifacts/kwccso00g4084cckgggcko0k'
+2025-Nov-20 06:58:58.540921
+node
+2025-Nov-20 06:58:58.549922
+Found application type: node.
+2025-Nov-20 06:58:58.557396
+If you need further customization, please check the documentation of Nixpacks: https://nixpacks.com/docs/providers/node
+2025-Nov-20 06:58:58.562574
+Final Nixpacks plan: {
+2025-Nov-20 06:58:58.562574
+"providers": [],
+2025-Nov-20 06:58:58.562574
+"buildImage": "ghcr.io\/railwayapp\/nixpacks:ubuntu-1745885067",
+2025-Nov-20 06:58:58.562574
+"variables": {
+2025-Nov-20 06:58:58.562574
+"CI": "true",
+2025-Nov-20 06:58:58.562574
+"COOLIFY_BRANCH": "main",
+2025-Nov-20 06:58:58.562574
+"COOLIFY_CONTAINER_NAME": "xskw0kkckgocksgw4808skw0-065850099554",
+2025-Nov-20 06:58:58.562574
+"COOLIFY_FQDN": "xskw0kkckgocksgw4808skw0.comfykid.store",
+2025-Nov-20 06:58:58.562574
+"COOLIFY_RESOURCE_UUID": "xskw0kkckgocksgw4808skw0",
+2025-Nov-20 06:58:58.562574
+"COOLIFY_URL": "https:\/\/xskw0kkckgocksgw4808skw0.comfykid.store",
+2025-Nov-20 06:58:58.562574
+"NIXPACKS_METADATA": "node",
+2025-Nov-20 06:58:58.562574
+"NIXPACKS_NODE_VERSION": "22",
+2025-Nov-20 06:58:58.562574
+"NODE_ENV": "production",
+2025-Nov-20 06:58:58.562574
+"NPM_CONFIG_PRODUCTION": "false",
+2025-Nov-20 06:58:58.562574
+"SOURCE_COMMIT": "1f70bb76b649a593a464254264283892563b2720"
+2025-Nov-20 06:58:58.562574
+},
+2025-Nov-20 06:58:58.562574
+"phases": {
+2025-Nov-20 06:58:58.562574
+"build": {
+2025-Nov-20 06:58:58.562574
+"dependsOn": [
+2025-Nov-20 06:58:58.562574
+"install"
+2025-Nov-20 06:58:58.562574
+],
+2025-Nov-20 06:58:58.562574
+"cmds": [
+2025-Nov-20 06:58:58.562574
+"npm run build"
+2025-Nov-20 06:58:58.562574
+],
+2025-Nov-20 06:58:58.562574
+"cacheDirectories": [
+2025-Nov-20 06:58:58.562574
+"node_modules\/.cache"
+2025-Nov-20 06:58:58.562574
+]
+2025-Nov-20 06:58:58.562574
+},
+2025-Nov-20 06:58:58.562574
+"install": {
+2025-Nov-20 06:58:58.562574
+"dependsOn": [
+2025-Nov-20 06:58:58.562574
+"setup"
+2025-Nov-20 06:58:58.562574
+],
+2025-Nov-20 06:58:58.562574
+"cmds": [
+2025-Nov-20 06:58:58.562574
+"npm ci"
+2025-Nov-20 06:58:58.562574
+],
+2025-Nov-20 06:58:58.562574
+"cacheDirectories": [
+2025-Nov-20 06:58:58.562574
+"\/root\/.npm"
+2025-Nov-20 06:58:58.562574
+],
+2025-Nov-20 06:58:58.562574
+"paths": [
+2025-Nov-20 06:58:58.562574
+"\/app\/node_modules\/.bin"
+2025-Nov-20 06:58:58.562574
+]
+2025-Nov-20 06:58:58.562574
+},
+2025-Nov-20 06:58:58.562574
+"setup": {
+2025-Nov-20 06:58:58.562574
+"nixPkgs": [
+2025-Nov-20 06:58:58.562574
+"nodejs_22",
+2025-Nov-20 06:58:58.562574
+"npm-9_x"
+2025-Nov-20 06:58:58.562574
+],
+2025-Nov-20 06:58:58.562574
+"nixLibs": [
+2025-Nov-20 06:58:58.562574
+"gcc-unwrapped"
+2025-Nov-20 06:58:58.562574
+],
+2025-Nov-20 06:58:58.562574
+"nixOverlays": [
+2025-Nov-20 06:58:58.562574
+"https:\/\/github.com\/railwayapp\/nix-npm-overlay\/archive\/main.tar.gz"
+2025-Nov-20 06:58:58.562574
+],
+2025-Nov-20 06:58:58.562574
+"nixpkgsArchive": "ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7",
+2025-Nov-20 06:58:58.562574
+"aptPkgs": [
+2025-Nov-20 06:58:58.562574
+"curl",
+2025-Nov-20 06:58:58.562574
+"wget"
+2025-Nov-20 06:58:58.562574
+]
+2025-Nov-20 06:58:58.562574
+}
+2025-Nov-20 06:58:58.562574
+}
+2025-Nov-20 06:58:58.562574
+}
+2025-Nov-20 06:58:59.729384
+Creating build-time .env file in /artifacts (outside Docker context).
+2025-Nov-20 06:59:00.589170
+[CMD]: docker exec kwccso00g4084cckgggcko0k bash -c 'cat /artifacts/build-time.env'
+2025-Nov-20 06:59:00.589170
+SOURCE_COMMIT='1f70bb76b649a593a464254264283892563b2720'
+2025-Nov-20 06:59:00.589170
+COOLIFY_URL='https://xskw0kkckgocksgw4808skw0.comfykid.store'
+2025-Nov-20 06:59:00.589170
+COOLIFY_FQDN='xskw0kkckgocksgw4808skw0.comfykid.store'
+2025-Nov-20 06:59:00.589170
+COOLIFY_BRANCH='main'
+2025-Nov-20 06:59:00.589170
+COOLIFY_RESOURCE_UUID='xskw0kkckgocksgw4808skw0'
+2025-Nov-20 06:59:00.589170
+COOLIFY_CONTAINER_NAME='xskw0kkckgocksgw4808skw0-065850099554'
+2025-Nov-20 06:59:00.610996
+----------------------------------------
+2025-Nov-20 06:59:00.620998
+Building docker image started.
+2025-Nov-20 06:59:00.626722
+To check the current progress, click on Show Debug Logs.
+2025-Nov-20 06:59:01.461824
+[CMD]: docker exec kwccso00g4084cckgggcko0k bash -c 'nixpacks build -c /artifacts/thegameplan.json --cache-key 'xskw0kkckgocksgw4808skw0' --no-error-without-start -n xskw0kkckgocksgw4808skw0:1f70bb76b649a593a464254264283892563b2720 /artifacts/kwccso00g4084cckgggcko0k -o /artifacts/kwccso00g4084cckgggcko0k'
+2025-Nov-20 06:59:01.461824
+2025-Nov-20 06:59:01.461824
+╔══════════════ Nixpacks v1.41.0 ═════════════╗
+2025-Nov-20 06:59:01.461824
+║ setup      │ nodejs_22, npm-9_x, curl, wget ║
+2025-Nov-20 06:59:01.461824
+║─────────────────────────────────────────────║
+2025-Nov-20 06:59:01.461824
+║ install    │ npm ci                         ║
+2025-Nov-20 06:59:01.461824
+║─────────────────────────────────────────────║
+2025-Nov-20 06:59:01.461824
+║ build      │ npm run build                  ║
+2025-Nov-20 06:59:01.461824
+║─────────────────────────────────────────────║
+2025-Nov-20 06:59:01.461824
+║ start      │                                ║
+2025-Nov-20 06:59:01.461824
+╚═════════════════════════════════════════════╝
+2025-Nov-20 06:59:01.461824
+2025-Nov-20 06:59:01.461824
+2025-Nov-20 06:59:01.461824
+Saved output to:
+2025-Nov-20 06:59:01.464114
+/artifacts/kwccso00g4084cckgggcko0k
+2025-Nov-20 06:59:01.859895
+[CMD]: docker exec kwccso00g4084cckgggcko0k bash -c 'cat /artifacts/kwccso00g4084cckgggcko0k/.nixpacks/Dockerfile'
+2025-Nov-20 06:59:01.859895
+FROM ghcr.io/railwayapp/nixpacks:ubuntu-1745885067
+2025-Nov-20 06:59:01.859895
+2025-Nov-20 06:59:01.859895
+ENTRYPOINT ["/bin/bash", "-l", "-c"]
+2025-Nov-20 06:59:01.859895
+WORKDIR /app/
+2025-Nov-20 06:59:01.859895
+2025-Nov-20 06:59:01.859895
+2025-Nov-20 06:59:01.859895
+COPY .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix
+2025-Nov-20 06:59:01.859895
+RUN nix-env -if .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix && nix-collect-garbage -d
+2025-Nov-20 06:59:01.859895
+RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends curl wget
+2025-Nov-20 06:59:01.859895
+2025-Nov-20 06:59:01.859895
+ARG CI COOLIFY_BRANCH COOLIFY_CONTAINER_NAME COOLIFY_FQDN COOLIFY_RESOURCE_UUID COOLIFY_URL NIXPACKS_METADATA NIXPACKS_NODE_VERSION NODE_ENV NPM_CONFIG_PRODUCTION SOURCE_COMMIT
+2025-Nov-20 06:59:01.859895
+ENV CI=$CI COOLIFY_BRANCH=$COOLIFY_BRANCH COOLIFY_CONTAINER_NAME=$COOLIFY_CONTAINER_NAME COOLIFY_FQDN=$COOLIFY_FQDN COOLIFY_RESOURCE_UUID=$COOLIFY_RESOURCE_UUID COOLIFY_URL=$COOLIFY_URL NIXPACKS_METADATA=$NIXPACKS_METADATA NIXPACKS_NODE_VERSION=$NIXPACKS_NODE_VERSION NODE_ENV=$NODE_ENV NPM_CONFIG_PRODUCTION=$NPM_CONFIG_PRODUCTION SOURCE_COMMIT=$SOURCE_COMMIT
+2025-Nov-20 06:59:01.859895
+2025-Nov-20 06:59:01.859895
+# setup phase
+2025-Nov-20 06:59:01.859895
+# noop
+2025-Nov-20 06:59:01.859895
+2025-Nov-20 06:59:01.859895
+# install phase
+2025-Nov-20 06:59:01.859895
+ENV NIXPACKS_PATH=/app/node_modules/.bin:$NIXPACKS_PATH
+2025-Nov-20 06:59:01.859895
+COPY . /app/.
+2025-Nov-20 06:59:01.859895
+RUN --mount=type=cache,id=xskw0kkckgocksgw4808skw0-/root/npm,target=/root/.npm npm ci
+2025-Nov-20 06:59:01.859895
+2025-Nov-20 06:59:01.859895
+# build phase
+2025-Nov-20 06:59:01.859895
+COPY . /app/.
+2025-Nov-20 06:59:01.859895
+RUN --mount=type=cache,id=xskw0kkckgocksgw4808skw0-node_modules/cache,target=/app/node_modules/.cache npm run build
+2025-Nov-20 06:59:01.859895
+2025-Nov-20 06:59:01.859895
+2025-Nov-20 06:59:01.859895
+RUN printf '\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile
+2025-Nov-20 06:59:01.859895
+2025-Nov-20 06:59:01.859895
+2025-Nov-20 06:59:01.859895
+# start
+2025-Nov-20 06:59:01.859895
+COPY . /app
+2025-Nov-20 06:59:02.721470
+[CMD]: docker exec kwccso00g4084cckgggcko0k bash -c 'cat /artifacts/build.sh'
+2025-Nov-20 06:59:02.721470
+cd /artifacts/kwccso00g4084cckgggcko0k && set -a && source /artifacts/build-time.env && set +a && docker build --add-host coolify:10.0.1.5 --add-host coolify-db:10.0.1.3 --add-host coolify-realtime:10.0.1.4 --add-host coolify-redis:10.0.1.6 --network host -f /artifacts/kwccso00g4084cckgggcko0k/.nixpacks/Dockerfile --progress plain -t xskw0kkckgocksgw4808skw0:1f70bb76b649a593a464254264283892563b2720 --build-arg CI --build-arg COOLIFY_BRANCH --build-arg COOLIFY_CONTAINER_NAME --build-arg COOLIFY_FQDN --build-arg COOLIFY_RESOURCE_UUID --build-arg COOLIFY_URL --build-arg NIXPACKS_METADATA --build-arg NIXPACKS_NODE_VERSION --build-arg NODE_ENV --build-arg NPM_CONFIG_PRODUCTION --build-arg SOURCE_COMMIT --build-arg COOLIFY_BUILD_SECRETS_HASH=73bdf98d2e2d9199bc56314f861e396856ec7b3f9bd4f6d091275c54308a9299 --build-arg 'SOURCE_COMMIT' --build-arg 'COOLIFY_URL' --build-arg 'COOLIFY_FQDN' --build-arg 'COOLIFY_BRANCH' --build-arg 'COOLIFY_RESOURCE_UUID' --build-arg 'COOLIFY_CONTAINER_NAME' /artifacts/kwccso00g4084cckgggcko0k
+2025-Nov-20 06:59:03.353578
+[CMD]: docker exec kwccso00g4084cckgggcko0k bash -c 'bash /artifacts/build.sh'
+2025-Nov-20 06:59:03.353578
+#0 building with "default" instance using docker driver
+2025-Nov-20 06:59:03.353578
+2025-Nov-20 06:59:03.353578
+#1 [internal] load build definition from Dockerfile
+2025-Nov-20 06:59:03.353578
+#1 transferring dockerfile: 1.44kB done
+2025-Nov-20 06:59:03.353578
+#1 DONE 0.0s
+2025-Nov-20 06:59:03.353578
+2025-Nov-20 06:59:03.353578
+#2 [internal] load metadata for ghcr.io/railwayapp/nixpacks:ubuntu-1745885067
+2025-Nov-20 06:59:03.366706
+#2 DONE 0.2s
+2025-Nov-20 06:59:03.590879
+#3 [internal] load .dockerignore
+2025-Nov-20 06:59:03.590879
+#3 transferring context: 85B done
+2025-Nov-20 06:59:03.590879
+#3 DONE 0.0s
+2025-Nov-20 06:59:03.590879
+2025-Nov-20 06:59:03.590879
+#4 [stage-0  1/11] FROM ghcr.io/railwayapp/nixpacks:ubuntu-1745885067@sha256:d45c89d80e13d7ad0fd555b5130f22a866d9dd10e861f589932303ef2314c7de
+2025-Nov-20 06:59:03.590879
+#4 DONE 0.0s
+2025-Nov-20 06:59:03.590879
+2025-Nov-20 06:59:03.590879
+#5 [internal] load build context
+2025-Nov-20 06:59:03.590879
+#5 transferring context: 1.25MB 0.0s done
+2025-Nov-20 06:59:03.590879
+#5 DONE 0.0s
+2025-Nov-20 06:59:03.590879
+2025-Nov-20 06:59:03.590879
+#6 [stage-0  2/11] WORKDIR /app/
+2025-Nov-20 06:59:03.590879
+#6 CACHED
+2025-Nov-20 06:59:03.590879
+2025-Nov-20 06:59:03.590879
+#7 [stage-0  3/11] COPY .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix
+2025-Nov-20 06:59:03.590879
+#7 CACHED
+2025-Nov-20 06:59:03.590879
+2025-Nov-20 06:59:03.590879
+#8 [stage-0  4/11] RUN nix-env -if .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix && nix-collect-garbage -d
+2025-Nov-20 06:59:03.590879
+#8 CACHED
+2025-Nov-20 06:59:03.590879
+2025-Nov-20 06:59:03.590879
+#9 [stage-0  5/11] RUN sudo apt-get update && sudo apt-get install -y --no-install-recommends curl wget
+2025-Nov-20 06:59:03.590879
+#9 CACHED
+2025-Nov-20 06:59:03.590879
+2025-Nov-20 06:59:03.590879
+#10 [stage-0  6/11] COPY . /app/.
+2025-Nov-20 06:59:03.590879
+#10 DONE 0.0s
+2025-Nov-20 06:59:03.590879
+2025-Nov-20 06:59:03.590879
+#11 [stage-0  7/11] RUN --mount=type=cache,id=xskw0kkckgocksgw4808skw0-/root/npm,target=/root/.npm npm ci
+2025-Nov-20 06:59:13.522181
+#11 10.08
+2025-Nov-20 06:59:13.522181
+#11 10.08 added 469 packages, and audited 470 packages in 10s
+2025-Nov-20 06:59:13.522181
+#11 10.08
+2025-Nov-20 06:59:13.522181
+#11 10.08 169 packages are looking for funding
+2025-Nov-20 06:59:13.673486
+#11 10.08   run `npm fund` for details
+2025-Nov-20 06:59:13.677484
+#11 10.08
+2025-Nov-20 06:59:13.677484
+#11 10.08 found 0 vulnerabilities
+2025-Nov-20 06:59:13.914374
+#11 DONE 10.5s
+2025-Nov-20 06:59:14.104879
+#12 [stage-0  8/11] COPY . /app/.
+2025-Nov-20 06:59:14.104879
+#12 DONE 0.0s
+2025-Nov-20 06:59:14.104879
+2025-Nov-20 06:59:14.104879
+#13 [stage-0  9/11] RUN --mount=type=cache,id=xskw0kkckgocksgw4808skw0-node_modules/cache,target=/app/node_modules/.cache npm run build
+2025-Nov-20 06:59:14.356308
+#13 0.402
+2025-Nov-20 06:59:14.361180
+#13 0.402 > lore-landing-page@0.0.1 build
+2025-Nov-20 06:59:14.361180
+#13 0.402 > astro build
+2025-Nov-20 06:59:14.361180
+#13 0.402
+2025-Nov-20 06:59:14.948686
+#13 0.994 ▶ Astro collects anonymous usage data.
+2025-Nov-20 06:59:14.948686
+#13 0.994   This information helps us improve Astro.
+2025-Nov-20 06:59:14.948686
+#13 0.994   Run "astro telemetry disable" to opt-out.
+2025-Nov-20 06:59:14.948686
+#13 0.994   https://astro.build/telemetry
+2025-Nov-20 06:59:14.948686
+#13 0.994
+2025-Nov-20 06:59:15.798192
+#13 1.844 06:59:15 [content] Syncing content
+2025-Nov-20 06:59:15.957269
+#13 1.848 06:59:15 [content] Synced content
+2025-Nov-20 06:59:15.957269
+#13 1.848 06:59:15 [types] Generated 217ms
+2025-Nov-20 06:59:15.957269
+#13 1.849 06:59:15 [build] output: "static"
+2025-Nov-20 06:59:15.957269
+#13 1.849 06:59:15 [build] mode: "static"
+2025-Nov-20 06:59:15.957269
+#13 1.849 06:59:15 [build] directory: /app/dist/
+2025-Nov-20 06:59:15.957269
+#13 1.849 06:59:15 [build] Collecting build info...
+2025-Nov-20 06:59:15.957269
+#13 1.849 06:59:15 [build] ✓ Completed in 258ms.
+2025-Nov-20 06:59:15.957269
+#13 1.850 06:59:15 [build] Building static entrypoints...
+2025-Nov-20 06:59:16.905699
+#13 2.951 06:59:16 [WARN] [vite] "isRemoteAllowed", "matchHostname", "matchPathname", "matchPort" and "matchProtocol" are imported from external module "@astrojs/internal-helpers/remote" but never used in "node_modules/astro/dist/assets/utils/remotePattern.js".
+2025-Nov-20 06:59:17.132393
+#13 3.021 06:59:16 [vite] ✓ built in 1.14s
+2025-Nov-20 06:59:17.132393
+#13 3.022 06:59:16 [build] ✓ Completed in 1.17s.
+2025-Nov-20 06:59:17.132393
+#13 3.022
+2025-Nov-20 06:59:17.132393
+#13 3.022  building client (vite)
+2025-Nov-20 06:59:17.132393
+#13 3.027 06:59:16 [vite] transforming...
+2025-Nov-20 06:59:19.625331
+#13 5.668 06:59:19 [vite] ✓ 2092 modules transformed.
+2025-Nov-20 06:59:19.812050
+#13 5.858 06:59:19 [vite] rendering chunks...
+2025-Nov-20 06:59:19.923990
+#13 5.947 06:59:19 [vite] computing gzip size...
+2025-Nov-20 06:59:19.923990
+#13 5.969 06:59:19 [vite] dist/_astro/jsx-runtime.D_zvdyIk.js      0.73 kB │ gzip:  0.46 kB
+2025-Nov-20 06:59:19.923990
+#13 5.969 06:59:19 [vite] dist/_astro/CTA.rcFKP6ll.js              1.36 kB │ gzip:  0.71 kB
+2025-Nov-20 06:59:19.923990
+#13 5.969 06:59:19 [vite] dist/_astro/ShootingStars.B9SQf5q2.js    1.37 kB │ gzip:  0.60 kB
+2025-Nov-20 06:59:19.923990
+#13 5.969 06:59:19 [vite] dist/_astro/Testimonials.C1ETQSTn.js     2.73 kB │ gzip:  0.95 kB
+2025-Nov-20 06:59:19.923990
+#13 5.969 06:59:19 [vite] dist/_astro/ThemeToggle.BLmGgVSs.js      3.66 kB │ gzip:  1.44 kB
+2025-Nov-20 06:59:19.923990
+#13 5.969 06:59:19 [vite] dist/_astro/Features.Bl2emRnx.js         3.85 kB │ gzip:  1.04 kB
+2025-Nov-20 06:59:19.923990
+#13 5.969 06:59:19 [vite] dist/_astro/Hero.yamrwkEk.js             3.86 kB │ gzip:  1.74 kB
+2025-Nov-20 06:59:19.923990
+#13 5.969 06:59:19 [vite] dist/_astro/button.BZG5LaOr.js           3.89 kB │ gzip:  1.74 kB
+2025-Nov-20 06:59:19.923990
+#13 5.969 06:59:19 [vite] dist/_astro/index.B5xx_DHV.js            8.36 kB │ gzip:  3.28 kB
+2025-Nov-20 06:59:19.923990
+#13 5.969 06:59:19 [vite] dist/_astro/utils.CDN07tui.js           25.51 kB │ gzip:  8.14 kB
+2025-Nov-20 06:59:19.923990
+#13 5.969 06:59:19 [vite] dist/_astro/ScrollReveal.F1HI19zb.js   112.36 kB │ gzip: 36.92 kB
+2025-Nov-20 06:59:19.923990
+#13 5.969 06:59:19 [vite] dist/_astro/client.gsLEW9Sx.js         186.62 kB │ gzip: 58.47 kB
+2025-Nov-20 06:59:19.923990
+#13 5.969 06:59:19 [vite] ✓ built in 2.94s
+2025-Nov-20 06:59:20.110022
+#13 6.004
+2025-Nov-20 06:59:20.110022
+#13 6.004  generating static routes
+2025-Nov-20 06:59:20.201779
+#13 6.247 06:59:20 ▶ src/pages/index.astro
+2025-Nov-20 06:59:20.338456
+#13 6.248 06:59:20   └─ /index.html (+37ms)
+2025-Nov-20 06:59:20.338456
+#13 6.285 06:59:20 ✓ Completed in 307ms.
+2025-Nov-20 06:59:20.338456
+#13 6.285
+2025-Nov-20 06:59:20.338456
+#13 6.287 06:59:20 [build] 1 page(s) built in 4.70s
+2025-Nov-20 06:59:20.338456
+#13 6.287 06:59:20 [build] Complete!
+2025-Nov-20 06:59:20.338456
+#13 6.330 npm notice
+2025-Nov-20 06:59:20.338456
+#13 6.330 npm notice New major version of npm available! 10.9.0 -> 11.6.3
+2025-Nov-20 06:59:20.338456
+#13 6.330 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.3
+2025-Nov-20 06:59:20.338456
+#13 6.330 npm notice To update run: npm install -g npm@11.6.3
+2025-Nov-20 06:59:20.338456
+#13 6.330 npm notice
+2025-Nov-20 06:59:20.338456
+#13 DONE 6.4s
+2025-Nov-20 06:59:20.455923
+#14 [stage-0 10/11] RUN printf '\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile
+2025-Nov-20 06:59:20.455923
+#14 DONE 0.1s
+2025-Nov-20 06:59:20.455923
+2025-Nov-20 06:59:20.455923
+#15 [stage-0 11/11] COPY . /app
+2025-Nov-20 06:59:20.455923
+#15 DONE 0.0s
+2025-Nov-20 06:59:20.609197
+#16 exporting to image
+2025-Nov-20 06:59:20.609197
+#16 exporting layers
+2025-Nov-20 06:59:22.814445
+#16 exporting layers 2.4s done
+2025-Nov-20 06:59:22.814445
+#16 writing image sha256:6b384b703794a2b004cae4922c02a03707290c1c21c8733791deadfd164e2c55
+2025-Nov-20 06:59:22.840362
+#16 writing image sha256:6b384b703794a2b004cae4922c02a03707290c1c21c8733791deadfd164e2c55 done
+2025-Nov-20 06:59:22.843779
+#16 naming to docker.io/library/xskw0kkckgocksgw4808skw0:1f70bb76b649a593a464254264283892563b2720 done
+2025-Nov-20 06:59:22.843779
+#16 DONE 2.4s
+2025-Nov-20 06:59:22.843779
+2025-Nov-20 06:59:22.843779
+1 warning found (use docker --debug to expand):
+2025-Nov-20 06:59:22.843779
+- UndefinedVar: Usage of undefined variable '$NIXPACKS_PATH' (line 18)
+2025-Nov-20 06:59:23.229359
+Building docker image completed.
+2025-Nov-20 06:59:23.237847
+Creating .env file with runtime variables for build phase.
+2025-Nov-20 06:59:23.973932
+[CMD]: docker exec kwccso00g4084cckgggcko0k bash -c 'cat /artifacts/kwccso00g4084cckgggcko0k/.env'
+2025-Nov-20 06:59:23.973932
+SOURCE_COMMIT=1f70bb76b649a593a464254264283892563b2720
+2025-Nov-20 06:59:23.973932
+COOLIFY_URL=https://xskw0kkckgocksgw4808skw0.comfykid.store
+2025-Nov-20 06:59:23.973932
+COOLIFY_FQDN=xskw0kkckgocksgw4808skw0.comfykid.store
+2025-Nov-20 06:59:23.973932
+COOLIFY_BRANCH=main
+2025-Nov-20 06:59:23.973932
+COOLIFY_RESOURCE_UUID=xskw0kkckgocksgw4808skw0
+2025-Nov-20 06:59:23.973932
+COOLIFY_CONTAINER_NAME=xskw0kkckgocksgw4808skw0-065850099554
+2025-Nov-20 06:59:23.973932
+PORT=3000
+2025-Nov-20 06:59:23.973932
+HOST=0.0.0.0
+2025-Nov-20 06:59:24.314287
+----------------------------------------
+2025-Nov-20 06:59:24.319493
+Rolling update started.
+2025-Nov-20 06:59:24.802929
+[CMD]: docker exec kwccso00g4084cckgggcko0k bash -c 'SOURCE_COMMIT=1f70bb76b649a593a464254264283892563b2720 COOLIFY_URL=https://xskw0kkckgocksgw4808skw0.comfykid.store COOLIFY_FQDN=xskw0kkckgocksgw4808skw0.comfykid.store COOLIFY_BRANCH=main COOLIFY_RESOURCE_UUID=xskw0kkckgocksgw4808skw0 COOLIFY_CONTAINER_NAME=xskw0kkckgocksgw4808skw0-065850099554  docker compose --project-name xskw0kkckgocksgw4808skw0 --project-directory /artifacts/kwccso00g4084cckgggcko0k -f /artifacts/kwccso00g4084cckgggcko0k/docker-compose.yaml up --build -d'
+2025-Nov-20 06:59:24.802929
+time="2025-11-20T06:59:24Z" level=warning msg="Found orphan containers ([xskw0kkckgocksgw4808skw0-065738237548]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up."
+2025-Nov-20 06:59:24.808358
+Container xskw0kkckgocksgw4808skw0-065850099554  Creating
+2025-Nov-20 06:59:24.870879
+xskw0kkckgocksgw4808skw0-065850099554 Your kernel does not support memory swappiness capabilities or the cgroup is not mounted. Memory swappiness discarded.
+2025-Nov-20 06:59:24.874890
+Container xskw0kkckgocksgw4808skw0-065850099554  Created
+2025-Nov-20 06:59:24.882117
+Container xskw0kkckgocksgw4808skw0-065850099554  Starting
+2025-Nov-20 06:59:25.077356
+Container xskw0kkckgocksgw4808skw0-065850099554  Started
+2025-Nov-20 06:59:25.117522
+New container started.
+2025-Nov-20 06:59:25.147804
+Removing old containers.
+2025-Nov-20 06:59:25.929200
+[CMD]: docker stop --time=30 xskw0kkckgocksgw4808skw0-065738237548
+2025-Nov-20 06:59:25.929200
+Flag --time has been deprecated, use --timeout instead
+2025-Nov-20 06:59:25.938310
+xskw0kkckgocksgw4808skw0-065738237548
+2025-Nov-20 06:59:26.329473
+[CMD]: docker rm -f xskw0kkckgocksgw4808skw0-065738237548
+2025-Nov-20 06:59:26.329473
+xskw0kkckgocksgw4808skw0-065738237548
+2025-Nov-20 06:59:26.335491
+Rolling update completed.
+2025-Nov-20 06:59:27.415444
+Gracefully shutting down build container: kwccso00g4084cckgggcko0k
+2025-Nov-20 06:59:27.797154
+[CMD]: docker stop --time=30 kwccso00g4084cckgggcko0k
+2025-Nov-20 06:59:27.797154
+Flag --time has been deprecated, use --timeout instead
+2025-Nov-20 06:59:27.981074
+kwccso00g4084cckgggcko0k
+2025-Nov-20 06:59:28.374393
+[CMD]: docker rm -f kwccso00g4084cckgggcko0k
+2025-Nov-20 06:59:28.374393
+Error response from daemon: No such container: kwccso00g4084cckgggcko0k
