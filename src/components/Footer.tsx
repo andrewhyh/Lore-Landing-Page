@@ -26,7 +26,7 @@ export const Footer = () => {
                     </svg>
                 </a>
             </div>
-            <p className="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">© 2024 Lore, Inc. All rights reserved.</p>
+            <p className="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">© 2025 Lore, Inc. All rights reserved.</p>
         </footer>
     );
 };
