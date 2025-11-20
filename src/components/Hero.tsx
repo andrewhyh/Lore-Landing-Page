@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { ScrollReveal } from "@/components/ScrollReveal";
+import { Typewriter } from "@/components/Typewriter";
 
 export const Hero = () => {
     return (
@@ -7,12 +9,20 @@ export const Hero = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     <div className="flex flex-col gap-8 text-center lg:text-left animate-in fade-in slide-in-from-bottom-8 duration-1000">
                         <div className="flex flex-col gap-6">
-                            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tighter text-gray-900 dark:text-white">
-                                <span className="font-extrabold text-electric-teal">Preserve</span> Your Story. Share Your <span className="font-extrabold text-electric-teal">Legacy</span>.
-                            </h1>
-                            <p className="text-xl md:text-2xl font-normal text-gray-600 dark:text-text-dark leading-relaxed">
-                                A modern archive for communities, families, and storytellers. Create digital journals, attach photos and videos, and build a shared legacy that lives forever.
-                            </p>
+                            <ScrollReveal>
+                                <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tighter text-gray-900 dark:text-white min-h-[1.2em]">
+                                    <Typewriter
+                                        words={["Preserve Your Story.", "Share Your Legacy.", "Your Digital Archive."]}
+                                        highlightWords={["Preserve", "Legacy", "Digital Archive"]}
+                                        highlightClassName="text-electric-teal"
+                                    />
+                                </h1>
+                            </ScrollReveal>
+                            <ScrollReveal>
+                                <p className="text-xl md:text-2xl font-normal text-gray-600 dark:text-text-dark leading-relaxed">
+                                    A modern archive for communities, families, and storytellers. Create digital journals, attach photos and videos, and build a shared legacy that lives forever.
+                                </p>
+                            </ScrollReveal>
                         </div>
                         <div className="flex flex-col gap-2">
                             <div className="flex flex-col sm:flex-row items-center gap-3 w-full max-w-lg mx-auto lg:mx-0">
