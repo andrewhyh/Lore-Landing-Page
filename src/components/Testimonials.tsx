@@ -13,7 +13,7 @@ export const Testimonials = () => {
                             <img
                                 className="size-12 rounded-full object-cover grayscale opacity-80"
                                 alt="Portrait of Alex Chen"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfwkrRpZDWceHRMQhD7oPUwK9ClFy4ZvLB1v8WfUNvjyIMVtr-9-sZHNYyBaEntdRpXbaNCwnMopX9x7tKbV1Q53XbIGbAnR3NUGDnWGAga7Zawzps3wFlTkSz_OOqGfrHYQEoFKb7Bds-c4QfDpTSL7wBbG752771Jpe0MvnkdI1h8-qTqbgcjerXq7yKPrrnaS3I4QagiMUuGsy86mGbbeIurYt0o6Npx_ufHZutOEM8RA6LhoxCrob4hehysW8nmsplZ4zxRgY"
+                                src="/images/alex-chen.png"
                             />
                             <div>
                                 <p className="text-base font-semibold leading-normal text-gray-900 dark:text-white">
@@ -33,7 +33,7 @@ export const Testimonials = () => {
                             <img
                                 className="size-12 rounded-full object-cover grayscale opacity-80"
                                 alt="Portrait of Maria Garcia"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkZiGWIn7BphFUK_kTkPdhdxXT9Svlwnjt6ST3hIFO_baOA0YNU603hfvMYljUBtHhJcCJkRdeE92QfKM1DrGAYwo3HqGwg-iHyp3joty2SQAWWFZjl9-uP32lqFIIRmQQZm4wPj2nJIkSfSBdE8kIfIh7et9YoP_y76RsZSIsCJL0HZq9zmRO9c-Y6N_XP2q0pwMnsoN7Os_-z04RJPh66NwZAbaJQvxQLmINMMH-fvsbsobVdQAq1LUKsW_D32qimTAP1a7SMZE"
+                                src="/images/maria-garcia.png"
                             />
                             <div>
                                 <p className="text-base font-semibold leading-normal text-gray-900 dark:text-white">

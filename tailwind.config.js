@@ -58,6 +58,16 @@ module.exports = {
                     '4': 'hsl(var(--chart-4))',
                     '5': 'hsl(var(--chart-5))'
                 }
+            },
+            keyframes: {
+                "shooting-star": {
+                    "0%": { transform: "rotate(315deg) translateX(0)", opacity: "1" },
+                    "70%": { opacity: "1" },
+                    "100%": { transform: "rotate(315deg) translateX(-1000px)", opacity: "0" },
+                },
+            },
+            animation: {
+                "shooting-star": "shooting-star 3s linear infinite",
             }
         }
     },

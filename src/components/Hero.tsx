@@ -14,17 +14,27 @@ export const Hero = () => {
                                 A modern archive for communities, families, and storytellers. Create digital journals, attach photos and videos, and build a shared legacy that lives forever.
                             </p>
                         </div>
-                        <div className="flex items-center justify-center lg:justify-start">
-                            <Button className="flex w-full sm:w-auto min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-gray-900 text-base font-semibold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all hover:scale-105 active:scale-95">
-                                <span className="truncate">Start Your Lore</span>
-                            </Button>
+                        <div className="flex flex-col gap-2">
+                            <div className="flex flex-col sm:flex-row items-center gap-3 w-full max-w-lg mx-auto lg:mx-0">
+                                <input
+                                    type="email"
+                                    placeholder="Enter your email"
+                                    className="flex-1 h-12 w-full rounded-full border border-gray-300 bg-white px-4 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:bg-gray-950 dark:text-white dark:placeholder:text-gray-400"
+                                />
+                                <Button className="flex-shrink-0 w-full sm:w-auto min-w-[140px] cursor-pointer items-center justify-center rounded-full h-12 px-6 bg-primary text-gray-900 text-base font-semibold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all hover:scale-105 active:scale-95 whitespace-nowrap">
+                                    <span>Join Our Waitlist Today</span>
+                                </Button>
+                            </div>
+                            <p className="text-sm text-gray-500 dark:text-gray-400 pl-2">
+                                Get notified when we drop Lore.
+                            </p>
                         </div>
                     </div>
                     <div className="flex justify-center items-center animate-in fade-in zoom-in duration-1000 delay-300">
                         <img
                             className="w-64 h-64 lg:w-96 lg:h-96 object-cover rounded-full shadow-[0_0px_80px_rgba(62,207,142,0.6)] hover:shadow-[0_0px_100px_rgba(62,207,142,0.8)] transition-shadow duration-500"
                             alt="Minimalist, geometric dinosaur icon with a subtle, futuristic glow"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLMsNmOu2lfWC1asqPK9uQLsPAjw55a7TXBQFG59m62Ja7Tx2NTiJW8ESd5HIiktGFNeYqE7lfkf38Yc_Uee1WxhzSP3gTRHEEBS_rUgD9ADHF0PWvEZmU0iFWJTfdwNlB3sp8tb9BCj_MRgSk6HWxw_EAjSIO_Tumbk5IRJo6kqBgYyT_qFFGr1Qp38ITWGhXT-V5ykHAx1u2U44rS5Ngv6bxAr_s_m3foCT3uwAFyB44r55GN-9U8-W-AunRxJhlHe7oXRdlcnY"
+                            src="/images/dino-logo.png"
                         />
                     </div>
                 </div>
