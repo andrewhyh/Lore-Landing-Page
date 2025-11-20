@@ -13,7 +13,8 @@ export const Hero = () => {
                                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tighter text-gray-900 dark:text-white min-h-[1.2em]">
                                     <Typewriter
                                         words={["Preserve Your Story.", "Share Your Legacy.", "Your Digital Archive."]}
-                                        className="text-electric-teal"
+                                        highlightWords={["Preserve", "Legacy", "Digital Archive"]}
+                                        highlightClassName="text-electric-teal"
                                     />
                                 </h1>
                             </ScrollReveal>
