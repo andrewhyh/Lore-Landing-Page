@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const CTA = () => {
     return (
@@ -6,9 +7,11 @@ export const CTA = () => {
             <div className="container mx-auto px-4">
                 <div className="flex flex-col items-center gap-8 text-center bg-slate-bg-light/50 dark:bg-muted-slate-blue/20 py-12 px-6 rounded-xl border border-gray-200 dark:border-muted-slate-blue animate-in fade-in slide-in-from-bottom-8 duration-1000">
                     <div className="flex flex-col gap-4">
-                        <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-gray-900 dark:text-white">
-                            Ready to Start Your Story?
-                        </h2>
+                        <ScrollReveal>
+                            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-gray-900 dark:text-white">
+                                Ready to Start Your Story?
+                            </h2>
+                        </ScrollReveal>
                         <p className="text-lg md:text-xl text-gray-600 dark:text-text-dark max-w-xl mx-auto">
                             Sign up today and begin preserving the moments that matter most.
                         </p>

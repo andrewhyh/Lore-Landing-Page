@@ -1,12 +1,17 @@
+import React from 'react';
+import { ScrollReveal } from "@/components/ScrollReveal";
+
 export const Testimonials = () => {
     return (
         <section className="py-20 md:py-28">
             <div className="container mx-auto px-4 flex flex-col gap-12">
-                <div className="flex flex-col gap-4 text-center animate-in fade-in slide-in-from-bottom-8 duration-1000">
-                    <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-gray-900 dark:text-white">
-                        Here's Why People Love Lore
-                    </h2>
-                </div>
+                <ScrollReveal>
+                    <div className="flex flex-col gap-4 text-center animate-in fade-in slide-in-from-bottom-8 duration-1000">
+                        <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-gray-900 dark:text-white">
+                            Here's Why People Love Lore
+                        </h2>
+                    </div>
+                </ScrollReveal>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="flex flex-col gap-4 p-6 rounded-xl border border-gray-200 dark:border-muted-slate-blue bg-slate-bg-light/50 dark:bg-muted-slate-blue/20 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-100">
                         <div className="flex items-center gap-4">
