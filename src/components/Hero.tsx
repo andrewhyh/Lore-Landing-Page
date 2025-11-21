@@ -44,7 +44,7 @@ export const Hero = () => {
                         <img
                             className="w-64 h-64 lg:w-96 lg:h-96 object-cover rounded-full shadow-[0_0px_80px_rgba(62,207,142,0.6)] hover:shadow-[0_0px_100px_rgba(62,207,142,0.8)] transition-shadow duration-500"
                             alt="Minimalist, geometric dinosaur icon with a subtle, futuristic glow"
-                            src="/images/leo-dinosaur.png"
+                            src="/images/hero-image.png"
                         />
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import { BouncingText } from "@/components/BouncingText";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const Features = () => {
@@ -8,7 +8,11 @@ export const Features = () => {
                 <ScrollReveal>
                     <div className="flex flex-col gap-4 text-center animate-in fade-in slide-in-from-bottom-8 duration-1000 view-transition-name:features-header">
                         <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter text-gray-900 dark:text-white">
-                            Your Digital Legacy, Simplified
+                            <BouncingText
+                                text="Your Digital Legacy, Simplified"
+                                highlightWords={["Simplified"]}
+                                highlightClassName="text-electric-teal"
+                            />
                         </h2>
                         <p className="text-lg md:text-xl font-normal leading-normal max-w-3xl mx-auto text-gray-600 dark:text-text-dark">
                             Lore provides all the tools you need to create a beautiful and lasting archive of your most important memories, stories, and media.
