@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const CTA = () => {
@@ -16,9 +15,9 @@ export const CTA = () => {
                             Sign up today and begin preserving the moments that matter most.
                         </p>
                     </div>
-                    <Button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-gray-900 text-base font-semibold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all hover:scale-105 active:scale-95">
+                    <a href="#waitlist-form" className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-gray-900 text-base font-semibold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all hover:scale-105 active:scale-95">
                         <span className="truncate">Join Waitlist Now</span>
-                    </Button>
+                    </a>
                 </div>
             </div>
         </section>

@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Typewriter } from "@/components/Typewriter";
+import { WaitlistForm } from "@/components/WaitlistForm";
 
 export const Hero = () => {
     return (
-        <section className="py-20 md:py-28 lg:py-32">
+        <section id="waitlist-form" className="py-20 md:py-28 lg:py-32 scroll-mt-24">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     <div className="flex flex-col gap-8 text-center lg:text-left animate-in fade-in slide-in-from-bottom-8 duration-1000">
@@ -24,21 +25,7 @@ export const Hero = () => {
                                 </p>
                             </ScrollReveal>
                         </div>
-                        <div className="flex flex-col gap-2">
-                            <div className="flex flex-col sm:flex-row items-center gap-3 w-full max-w-lg mx-auto lg:mx-0">
-                                <input
-                                    type="email"
-                                    placeholder="Enter your email"
-                                    className="flex-1 h-12 w-full rounded-full border border-gray-300 bg-white px-4 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:bg-gray-950 dark:text-white dark:placeholder:text-gray-400"
-                                />
-                                <Button className="flex-shrink-0 w-full sm:w-auto min-w-[140px] cursor-pointer items-center justify-center rounded-full h-12 px-6 bg-primary text-gray-900 text-base font-semibold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all hover:scale-105 active:scale-95 whitespace-nowrap">
-                                    <span>Join Our Waitlist Today</span>
-                                </Button>
-                            </div>
-                            <p className="text-sm text-gray-500 dark:text-gray-400 pl-2">
-                                Get notified when we drop Lore.
-                            </p>
-                        </div>
+                        <WaitlistForm />
                     </div>
                     <div className="flex justify-center items-center animate-in fade-in zoom-in duration-1000 delay-300">
                         <img
@@ -49,6 +36,6 @@ export const Hero = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
