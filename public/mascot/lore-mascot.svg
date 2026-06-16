@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+  <!-- Soft glow -->
+  <defs>
+    <radialGradient id="bodyG" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#5fd9a1" />
+      <stop offset="60%" stop-color="#3ecf8e" />
+      <stop offset="100%" stop-color="#2cb479" />
+    </radialGradient>
+    <radialGradient id="bellyG" cx="50%" cy="55%" r="55%">
+      <stop offset="0%" stop-color="#f7f5ec" />
+      <stop offset="100%" stop-color="#e9efe1" />
+    </radialGradient>
+    <linearGradient id="cheek" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8c80" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ff6b5e" stop-opacity="0.6" />
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.4" />
+    </filter>
+  </defs>
+
+  <!-- Tail -->
+  <path d="M310 240 q60 -10 70 -60 q-10 10 -40 12 q-20 -22 -42 -10 z" fill="url(#bodyG)" />
+
+  <!-- Body -->
+  <path d="M120 240
+           q-40 -90 30 -150
+           q60 -55 120 -10
+           q70 50 50 130
+           q-10 50 -50 70
+           q-30 14 -90 14
+           q-50 0 -70 -20
+           q-15 -16 10 -34 z"
+        fill="url(#bodyG)" />
+
+  <!-- Belly -->
+  <path d="M150 280
+           q5 -55 45 -65
+           q35 -8 65 8
+           q22 14 22 36
+           q0 28 -18 42
+           q-30 22 -78 14
+           q-30 -6 -36 -35 z"
+        fill="url(#bellyG)" />
+
+  <!-- Plates on back -->
+  <g fill="#2cb479">
+    <path d="M148 152 q10 -16 20 0 q-10 8 -20 0 z" />
+    <path d="M178 130 q12 -18 24 0 q-12 10 -24 0 z" />
+    <path d="M212 120 q12 -16 22 0 q-11 8 -22 0 z" />
+    <path d="M246 128 q10 -14 20 0 q-10 8 -20 0 z" />
+  </g>
+
+  <!-- Feet -->
+  <ellipse cx="170" cy="338" rx="34" ry="14" fill="#2cb479" />
+  <ellipse cx="252" cy="338" rx="34" ry="14" fill="#2cb479" />
+
+  <!-- Arm -->
+  <path d="M188 260 q-8 22 4 36 q14 14 28 8" stroke="#2cb479" stroke-width="14" stroke-linecap="round" fill="none" />
+
+  <!-- Eyes -->
+  <g>
+    <circle cx="200" cy="180" r="9" fill="#153f38" />
+    <circle cx="244" cy="180" r="9" fill="#153f38" />
+    <circle cx="203" cy="177" r="2.5" fill="#fbfaf7" />
+    <circle cx="247" cy="177" r="2.5" fill="#fbfaf7" />
+  </g>
+
+  <!-- Cheeks -->
+  <ellipse cx="186" cy="200" rx="10" ry="6" fill="url(#cheek)" filter="url(#soft)" />
+  <ellipse cx="258" cy="200" rx="10" ry="6" fill="url(#cheek)" filter="url(#soft)" />
+
+  <!-- Smile -->
+  <path d="M210 210 q12 10 24 0" stroke="#153f38" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+  <!-- Tiny sparkle -->
+  <g fill="#ffc857">
+    <circle cx="296" cy="146" r="3" />
+    <circle cx="306" cy="158" r="1.6" />
+    <circle cx="284" cy="160" r="1.6" />
+  </g>
+</svg>
