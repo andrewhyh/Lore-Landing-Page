@@ -1,43 +1,55 @@
-# Astro Starter Kit: Minimal
+# Lore — Landing site (v2)
 
-```sh
-npm create astro@latest -- --template minimal
+The public marketing site for **Lore**, a warm, modern home for your family's
+memories. This repo is the landing-page front for the app at
+`https://lore.nextechelon.site/`.
+
+## Stack
+
+- Next.js 15 (App Router) · React 19 · TypeScript strict
+- Tailwind v3 with custom design tokens
+- `lucide-react` for icons
+- Light/dark theme with a pre-paint inline bootstrap (no FOUC)
+
+## Pages
+
+| Route       | Purpose                                                     |
+| ----------- | ----------------------------------------------------------- |
+| `/`         | Landing — hero, features, editorial, pricing, FAQ, final CTA |
+| `/pricing`  | Full pricing table with feature comparison and pricing FAQ  |
+| `/about`    | Story, values, "what we are not"                            |
+| `/faq`      | Grouped accordion FAQ (basics, privacy, family, pricing)    |
+| `/privacy`  | Plain-language privacy notice                               |
+| `/terms`    | Plain-language terms of use                                 |
+
+## Sign-in / sign-up
+
+All auth CTAs ("Sign in", "Start your archive", "Make your Lore") point to
+the app URL defined by `NEXT_PUBLIC_APP_URL`. Source of truth is
+`lib/config.ts` — change one constant to retarget the whole site.
+
+Default: `https://lore.nextechelon.site/`.
+
+## Local dev
+
+```bash
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # type-check + static build
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Deploying
 
-## 🚀 Project Structure
+This is a standard Next.js project — ship it to Vercel, set
+`NEXT_PUBLIC_APP_URL` if it differs from the default, and you're done.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Design system
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+See `docs/SPEC.md` for the original brief and the tokens locked into
+`tailwind.config.ts` + `app/globals.css`.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Mascot
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+The hero references `public/mascot/lore-mascot.svg`. The included file is a
+placeholder — drop your final artwork in at the same path (or swap the
+`<img src>` in `components/site/hero.tsx`).
